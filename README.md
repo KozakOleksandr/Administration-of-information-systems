@@ -1,1 +1,0 @@
-# Administration-of-information-systems
