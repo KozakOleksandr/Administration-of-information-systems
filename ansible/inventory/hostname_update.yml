@@ -2,16 +2,13 @@
 - name: Update hostname
   hosts: all
   become: yes
-
   tasks:
-    - name: Set hostname to "oleksandr-kozak-lab2"
+    - name: Set hostname
       lineinfile:
         path: /etc/hostname
         regexp: '^.*$'
         line: 'oleksandr-kozak-lab2'
-      notify: Reload hostname
+      notify: restart hostname
   handlers:
-    - name: Reload hostname
-      service:
-        name: systemd-hostnamed
-        state: restarted
+    - name: restart hostname
+      command: hostnamectl set-hostname oleksandr-kozak-lab2
