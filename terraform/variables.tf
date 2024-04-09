@@ -4,7 +4,6 @@ variable "ec2_ami" {
   default = {
     us-east-1 = "ami-0cd59ecaf368e5ccf"
   }
-
 }
 
 variable "region" {

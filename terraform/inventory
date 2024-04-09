@@ -1,0 +1,2 @@
+[ALL]
+192.168.0.105:22 ansible_user=oleksandr-kozak-lab2 ansible_ssh_pass=K40p21wr2
